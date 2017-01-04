@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  npu: 00012345520098170001
+  district: Recife
+  process_class: Arresto
+
+two:
+  user_id: 2
+  npu: 00082741520108170001
+  district: Cabo de Santo Agostinho
+  process_class: Execução
