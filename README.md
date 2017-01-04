@@ -1,24 +1,40 @@
-# README
+NgProc API is a Ruby on Rails Json API that uses JWT (Json Web Token) as token-based authentication system.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- [Installing](#installing)
+- [Technologies](#technologies)
+- [Other Notes](#other-notes)
+- [License](#license)
 
-Things you may want to cover:
+## Installing
 
-* Ruby version
+Installing the dependencies:
 
-* System dependencies
+```bash
+bundle install
 
-* Configuration
+```
 
-* Database creation
+Setting up the database:
 
-* Database initialization
+```bash
+rails db:migrate
+rails db:seed
 
-* How to run the test suite
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+The application has an action at AutheticationController#auth to make the authentication. Use the admin_user (email: admin@admin.com, password: 123456) to get the JWT.
 
-* Deployment instructions
+## Technologies
 
-* ...
+* Ruby: 2.2.0
+* Rails: 5.0.0.1
+* Sqlite 3 (Migrating to MySQL soon)
+* Devise
+* JWT
+* RSpec
+
+## Other Notes
+
+## License
+
+MIT
