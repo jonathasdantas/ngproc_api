@@ -17,6 +17,7 @@ bundle install
 Setting up the database:
 
 ```bash
+rails db:create
 rails db:migrate
 rails db:seed
 
@@ -26,9 +27,9 @@ The application has an action at AutheticationController#auth to make the authen
 
 ## Technologies
 
-* Ruby: 2.2.0
+* Ruby: 2.3.3
 * Rails: 5.0.0.1
-* Sqlite 3 (Migrating to MySQL soon)
+* MySQL: 5.7.17
 * Devise
 * JWT
 * RSpec
