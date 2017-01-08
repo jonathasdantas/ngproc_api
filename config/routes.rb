@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   post 'auth' => 'authentication#auth'
 
   # District Routes
-  resources :districts, only: [:index, :show]
-
-  # Judging Body Routes
-  resources :judging_bodies, only: [:index, :show]
+  resources :districts, only: [:index, :show] do
+    # Judging Body Routes
+    resources :judging_bodies, only: [:index, :show]
+  end
 
   # Process Class Routes
   resources :process_classes, only: [:index, :show]
