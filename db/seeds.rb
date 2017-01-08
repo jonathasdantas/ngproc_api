@@ -65,7 +65,7 @@ process_classes = [
 # Justice Processes
 processes = []
 
-(0..100).each do
+(0..15).each do
   processes << JusticeProcess.create(
     {
       npu: "#{rand(10000)}",
