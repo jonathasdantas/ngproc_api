@@ -5,8 +5,10 @@ Rails.application.routes.draw do
   # District Routes
   resources :districts, only: [:index, :show] do
     # Judging Body Routes
-    resources :judging_bodies, only: [:index, :show]
+    resources :judging_bodies, only: [:index]
   end
+
+  resources :judging_bodies, only: [:show]
 
   # Process Class Routes
   resources :process_classes, only: [:index, :show]

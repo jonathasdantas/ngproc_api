@@ -6,6 +6,6 @@ class JudgingBodiesController < ApplicationController
 
   # GET - BY ID
   def show
-    render json: JudgingBody.where(params[:id], district_id: params[:district_id])
+    render json: JudgingBody.find(params[:id])
   end
 end
